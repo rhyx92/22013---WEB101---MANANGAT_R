@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Group 8 </title>
-    <link rel="icon" type="image/jpg" href="image/group8.jpg"/>
-
+    <link rel="icon" type="image/jpg" href="image/grp8.jpg"/>
+    
     <!-- ICONS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
@@ -268,14 +268,14 @@
     display: flex;            
     align-items: center;
     justify-content: center;
-}
+    }
 
-.modal-img-frame img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;        
-    display: block;
-}
+    .modal-img-frame img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;        
+        display: block;
+    }
 
     /* Push text down so it doesn't overlap */
     .modal-content {
@@ -290,7 +290,13 @@
         margin-left: 0;
     }
 
-
+    footer {
+        text-align: center;
+        padding: 15px;
+        background: #163e66aa;
+        color: #fff;
+        backdrop-filter: blur(10px);
+    }
     </style>
 </head>
 
@@ -307,6 +313,7 @@
     <ul>
         <li><a href="#home"><i class="fa-solid fa-house"></i></a></li>
         <li><a href="#friends"><i class="fa-solid fa-users"></i></a></li>
+        <li><a href="#settings"><i class="fa-solid fa-gear"></i></a></li>
        
     </ul>
 </nav>
@@ -320,37 +327,47 @@
     </div>
 </section>
 
-<!-- PROFILE SECTION -->
-<section id="profile">
-    <div class="profile-card">
-        <div class="profile-image">
-            <img src="image/manangat.jpg">
-        </div>
-<div class="name-block">.</div>
 
-       
-
-        <h2>Manangat, Raizza</h2>
-        <p class="location">BSIT - 2213</p>
-
-
-        <button class="show-more"
-            onclick="openProfile(
-                'image/manangat.jpg',
-                'Manangat, Raizza',
-                'My goal is to balance my IT studies with personal growth by improving time management, maintaining mental wellness, and learning new hobbies.',
-                '0970-151-7848',
-                'raizzamanangat92@gmail.com'
-            )">
-            View Profile</button>
-    </div>
-</section>
 
 <!-- FRIENDS SECTION -->
 <section id="friends">
-    
-
     <div class="friends-container">
+
+        <!-- AGON -->
+        <div class="profile-card">
+            <div class="profile-image"><img src="image/agon.jpg"></div>
+            <div class="name-block">,</div>
+
+            <h2>Agon, Jay Emmanuel</h2>
+            <p class="location">BSIT - 2213</p>
+            <button class="show-more"
+                onclick="openProfile(
+                    'image/agon.jpg',
+                    'Agon, Jay Emmanuel',
+                    'My primary goal is to be helpful and informative to you, the user. Every decision I make (like what information to retrieve, what words to use, or how to structure a response) is based on achieving this goal.',
+                    '0991-4869-340',
+                    'agonjayemmanuelbuligan@gmail.com')">
+                View Profile
+            </button>
+        </div>
+
+        <!-- BAÑARES -->
+        <div class="profile-card">
+            <div class="profile-image"><img src="image/bañares.jpg"></div>
+            <div class="name-block">,</div>
+
+            <h2>Bañares, Keyrby</h2>
+            <p class="location">BSIT - 2213</p>
+            <button class="show-more"
+                onclick="openProfile(
+                    'image/bañares.jpg',
+                    'Bañares, Keyrby',
+                    'Together, we build the future”, and I strive to grow every day—learning, improving, and using my abilities to make a positive impact on the people around me.',
+                    '0985-4698-762',
+                    'keyrbyb@gmail.com')">
+                View Profile
+            </button>
+        </div>
 
         <!--FRANCISCO -->
         <div class="profile-card">
@@ -372,20 +389,20 @@
             </button>
         </div>
 
-        <!-- AGON -->
+        <!-- MANANGAT -->
         <div class="profile-card">
-            <div class="profile-image"><img src="image/agon.jpg"></div>
-            <div class="name-block">,</div>
-
-            <h2>Agon, Jay Emmanuel</h2>
+            <div class="profile-image"><img src="image/manangat.jpg"></div>
+            <div class="name-block">     .</div>
+            <h2>Manangat, Raizza</h2>
             <p class="location">BSIT - 2213</p>
             <button class="show-more"
                 onclick="openProfile(
-                    'image/agon.jpg',
-                    'Agon, Jay Emmanuel',
-                    'My primary goal is to be helpful and informative to you, the user. Every decision I make (like what information to retrieve, what words to use, or how to structure a response) is based on achieving this goal.',
-                    '0991-4869-340',
-                    'agonjayemmanuelbuligan@gmail.com')">
+                    'image/manangat.jpg',
+                    'Manangat, Raizza',
+                    'My goal is to balance my IT studies with personal growth by improving time management, maintaining mental wellness, and learning new hobbies.',
+                    '0970-151-7848',
+                    'raizzamanangat92@gmail.com'
+                )">
                 View Profile
             </button>
         </div>
@@ -408,26 +425,14 @@
             </button>
         </div>
 
-         <!-- BAÑARES -->
-        <div class="profile-card">
-            <div class="profile-image"><img src="image/bañares.jpg"></div>
-            <div class="name-block">,</div>
-
-            <h2>Bañares, Keyrby</h2>
-            <p class="location">BSIT - 2213</p>
-            <button class="show-more"
-                onclick="openProfile(
-                    'image/bañares.jpg',
-                    'Bañares, Keyrby',
-                    'Together, we build the future”, and I strive to grow every day—learning, improving, and using my abilities to make a positive impact on the people around me.',
-                    '0985-4698-762',
-                    'keyrbyb@gmail.com')">
-                View Profile
-            </button>
-        </div>
+        
 
     </div>
 </section>
+<!-- FOOTER -->
+<footer>
+    &copy; 2025 Group 8
+</footer>
 
 <!-- POPUP MODAL -->
 <div id="profileModal" class="modal">
